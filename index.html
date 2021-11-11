@@ -4,9 +4,38 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/style.css">
+
   <title>Slider vue</title>
 </head>
 <body>
+  
+  <div id="app">
+    <div class="container">
+      <div class="slider">
+        <div class="slider-left">
+          <div class="item active">
+            <img :src="items[counter]">
+            <div class="text">
+              <h3>Svezia</h3>
+              <p>Lorem ipsum</p>
+            </div>
+          </div>
+          
+        </div>
+  
+        <div class="slider-right">
+            <div class="item2 active2">
+              <img src="img/01.jpg" alt="">
+            </div>
+            
+            <div @click="prevItem" class="prev"> &uarr; </div>
+            <div @click="nextItem" class="next"> &darr; </div>
+        </div>
+      </div>
+    </div>
+  </div>
   
 
   <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
