@@ -50,22 +50,22 @@
   position: relative;
 }
 
-.item img, .item2 img  {
+.item img {
   width: 100%;
   display: block;
 }
 
-.slider-right .item2 {
+.slider-right .item {
   height: calc(100% / 5);
   opacity: 0.5;
 }
 
-.slider-right .item2 img {
+.slider-right .item img {
   height: 100%;
   object-fit: cover;
 }
 
-.slider-right .item2.active2 {
+.slider-right .item.active {
   opacity: 1;
   border: 2px solid white;
 }

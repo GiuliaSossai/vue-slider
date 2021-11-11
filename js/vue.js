@@ -49,3 +49,6 @@ const app = new Vue ({
 
 
 });
+
+//se counter è uguale al counter dell'immagine piccola, allora aggiungi classe active
+//:class = (items = counter)
