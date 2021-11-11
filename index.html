@@ -18,8 +18,8 @@
           <div class="item active">
             <img :src="items[counter]">
             <div class="text">
-              <h3>Svezia</h3>
-              <p>Lorem ipsum</p>
+              <h3>{{title[counter]}}</h3>
+              <p>{{text[counter]}}</p>
             </div>
           </div>
           
@@ -27,7 +27,7 @@
   
         <div class="slider-right">
             <div class="item2 active2">
-              <img src="img/01.jpg" alt="">
+              <img :src="items[counter]">
             </div>
             
             <div @click="prevItem" class="prev"> &uarr; </div>
