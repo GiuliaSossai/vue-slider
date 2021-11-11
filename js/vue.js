@@ -24,6 +24,12 @@ const app = new Vue ({
 
   },
 
+  mounted(){
+    setInterval(() =>{
+      this.nextItem();
+    }, 3000)
+  },
+
   methods: {
     prevItem(){
       this.counter--;
