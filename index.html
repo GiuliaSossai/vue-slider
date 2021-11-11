@@ -26,6 +26,7 @@
         </div>
   
         <div class="slider-right">
+          <!-- se l'immagine di sx è la stessa di quella di dx, allora aggiungo classe active a dx -->
             <div class="item" v-for="item in items" :class="{active: (items[counter] === item)}">
               <img :src="item">
             </div>
