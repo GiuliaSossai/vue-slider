@@ -26,8 +26,13 @@
         </div>
   
         <div class="slider-right">
-          <!-- se l'immagine di sx è la stessa di quella di dx, allora aggiungo classe active a dx -->
-            <div class="item" v-for="item in items" :class="{active: (items[counter] === item)}">
+          <!-- se l'immagine di sx è la stessa di quella di dx, allora aggiungo classe active a dx; :class="{active: (items[counter] === item)}" ; ma faccio con contatore, più semplice; al click su img dx, cambia img di sx; DA AGGIUNGERE A IMG DX :alt="title" :title="title"-->
+            <div 
+              class="item" 
+              v-for="(item, index) in items" 
+              @click="counter = index"
+              :class="{active: index === counter}"
+            >
               <img :src="item">
             </div>
             
