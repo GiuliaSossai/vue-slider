@@ -44,7 +44,6 @@ const app = new Vue ({
         this.counter = 0;
       }
     }
-
   }
 
 });
